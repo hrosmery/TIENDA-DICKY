@@ -1,0 +1,68 @@
+/* Cajita donde va mi información */
+.item-producto { 
+  border: 1px solid #6b1010d8;
+  border-radius: 8px;
+  background: rgb(255, 209, 209);
+  padding: 10px;
+
+  display: grid;
+  grid-template-rows: 180px auto 1fr auto;
+  gap: 10px;
+}
+
+/* La sombrita debajo de mi cuadrito */
+.item-producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px black; /* sirver para ponerle sombrita abajo de la cajita*/
+}
+
+/* Todo sobre las imagenes */
+
+.div-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Titulo de cada producto */
+
+.titulo-producto {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Describo mi producto */
+
+.descripcion {
+  font-size: 0.9rem;
+  color: black;
+  text-align: center;
+}
+
+/* Precio, color y tamaño */
+
+.precio {
+  background-color: #fcabab;
+  padding: 6px 10px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 600;
+  margin: auto;
+}
+
+/* Colores de mi cajita de precio */
+.precio:hover {
+  background-color: #810a06;
+  color: white;
+}
